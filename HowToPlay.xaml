@@ -1,0 +1,65 @@
+﻿
+<Window x:Class="SimpleConcentration.HowToPlay"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimpleConcentration"
+        mc:Ignorable="d"
+        Title="How To Play This Game" 
+        Height="300" 
+        Width="600"
+        Background="Gold"
+        Foreground="Blue"
+        WindowStartupLocation="CenterOwner">
+    <StackPanel
+        Margin="20,0,20,0">
+        <Label
+            Content="Instructions"
+            Margin="10"
+            HorizontalAlignment="Center"
+            FontSize="16"
+            FontWeight="Bold"
+            Foreground="DarkBlue"/>
+        <TextBlock
+            Text="The starting board contains 30 cards scattered randomly. The card deck has 2 cards each numbered"
+            Margin="1"/>
+        <TextBlock
+            Text="from 1 to 15. The goal for each player is to find more pairs than the other player. Player 1 starts"
+            Margin="1"
+            TextWrapping="Wrap"/>
+        <TextBlock
+            Text="by clicking on 2 cards looking for a match. If they find one, those cards are no longer clickable and"
+            Margin="1"
+            TextWrapping="Wrap"/>
+        <TextBlock
+            Text="they get to go again. If they don't match, those cards are turned back over and now it is Player 2's"
+            Margin="1"
+            TextWrapping="Wrap"/>
+        <TextBlock
+            Text="turn. Play continues until all pairs are found. After all the pairs are found, the player with the "
+            Margin="1"
+            TextWrapping="Wrap"/>
+        <TextBlock
+            Text="most pairs wins."
+            Margin="1"
+            TextWrapping="Wrap"/>
+        <TextBlock
+            Text=""
+            Margin="1"
+            TextWrapping="Wrap"/>
+        <TextBlock
+            Text="If you need any help, the 'Gimme a Hint' button will tell you how to find a pair."
+            Margin="1"
+            TextWrapping="Wrap"/>
+        <Button
+            x:Name="Button_ExitButton"
+            Content="Exit"
+            Width="75" 
+            Height="30"
+            Margin="10"
+            Background="DarkBlue"
+            Foreground="PowderBlue"
+            Click="Button_ExitButton_Click"/>
+    </StackPanel>
+</Window>
